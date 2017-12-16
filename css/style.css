@@ -27,10 +27,10 @@
 }
 
 @font-face {
-  font-family: 'PFAgoraSansPro-Thin';
+  font-family: 'AgoraSansProThin';
   font-style: normal;
   font-weight: 700;
-  src: url('../fonts/pfagorasanspro-thin.woff') format('woff');
+  src: url('../fonts/AgoraSansProThin.woff') format('woff');
 }
 
 @font-face {
@@ -66,13 +66,13 @@ body {
 .button {
   display: block;
   text-decoration: none;
-  font-family: 'PFAgoraSansPro-Thin', 'Arial', sans-serif;
+  font-family: 'AgoraSansProThin', 'Arial', sans-serif;
   font-weight: 700;
   letter-spacing: 2px;
   word-spacing: 2px;
   font-size: 26px;
   text-transform: uppercase;
-  padding: 23px 35px;
+  padding: 20px 38px;
   border-radius: 10px;
 }
 
@@ -120,11 +120,23 @@ body {
   text-transform: uppercase;
   padding: 0;
   margin: 0;
-  padding-top: 50px;
 }
 
 .main-header::first-letter {
   font-size: 60px;
+}
+
+.main-banner .main-header {
+  padding-top: 50px;
+  padding-bottom: 5px;
+}
+
+.main-banner h2 {
+  font-family: 'AgoraSansProLight', 'Arial', sans-serif;
+  font-size: 24px;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 70px;
 }
 
 .main-banner .button {
@@ -133,7 +145,7 @@ body {
 
 .steps {
   padding-top: 55px;
-  padding-bottom: 95px;
+  margin-bottom: 90px;
 }
 
 .steps-list {
@@ -199,6 +211,8 @@ body {
   font-family: 'AgoraSansProLight';
   font-size: 24px;
   text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
 .advantage {
@@ -209,7 +223,7 @@ body {
 .advantage .main-header {
   padding: 0;
   padding-top: 50px;
-  padding-bottom: 60px;
+  padding-bottom: 50px;
   margin: 0;
 }
 
@@ -218,19 +232,21 @@ body {
   font-size: 24px;
   padding: 0;
   margin: 0;
-  padding-bottom: 25px;
-  padding-top: 22px;
+  padding-bottom: 20px;
+  padding-top: 15px;
 }
 
 .advantage-info {
   font-family: 'AgoraSansProLight', Arial, sans-serif;
   font-size: 16px;
+  margin: 0;
+  padding: 0;
 }
 
 .advantage-list {
   list-style: none;
   margin: 0;
-  margin-bottom: 78px;
+  margin-bottom: 85px;
   padding: 0;
   display: flex;
   justify-content: space-between;
@@ -251,7 +267,8 @@ body {
 
 .solutions .main-header {
   align-self: center;
-  margin-bottom: 55px;
+  padding-top: 60px;
+  margin-bottom: 65px;
 }
 
 .solutions-list {
@@ -372,10 +389,84 @@ body {
 
 .testimonials .main-header {
   padding: 0;
-  padding-top: 50px;
-  padding-bottom: 60px;
+  padding-top: 35px;
+  padding-bottom: 40px;
   margin: 0;
 }
+
+.reviewer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  font-family: 'AgoraSansProLight', 'Arial', sans-serif;
+}
+
+.reviewer-img {
+  width: 158px;
+  height: 158px;
+  padding: 0;
+  margin-right: 30px;
+}
+
+.reviewer-name {
+  font-size: 30px;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+.reviewer-profession {
+  padding: 0;
+  margin: 0;
+}
+
+.review {
+  line-height: 23px;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 35px;
+}
+
+.review p {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 5px;
+}
+
+.testimonial-link {
+  display: block;
+  align-self: flex-end;
+  font-family: 'AgoraSansProThin', 'Arial', sans-serif;
+  color: #000000;
+  text-decoration: none;
+  font-size: 16px;
+  margin-bottom: 110px;
+  padding-right: 35px;
+  position: relative;
+}
+
+.testimonial-link::after {
+  content: '';
+  width: 26px;
+  height: 8px;
+  background-image: url('../img/arrow.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 5px;
+  right: 0px;
+}
+
+.testimonial-link:hover,
+.testimonial-link:active {
+  text-decoration: underline;
+}
+
+
+.testimonials .button {
+  align-self: center;
+}
+
 
 .terms  {
   margin-bottom: 120px;
@@ -405,7 +496,7 @@ body {
   font-size: 36px;
   text-align: center;
   margin: 0;
-  padding: 17px 0;
+  padding: 15px 0;
   background-color: #ffd200;
   color: #000000;
   border-top-left-radius: 10px;
@@ -421,6 +512,13 @@ body {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   padding: 30px 35px;
+  padding-bottom: 40px;
+}
+
+.terms-info p {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 10px;
 }
 
 .terms-info ul {
@@ -428,11 +526,13 @@ body {
   line-height: 30px;
   padding: 0;
   margin: 0;
-  padding-top: 15px;
-  padding-left: 45px;
+  margin-top: 5px;
+  padding-left: 15px;
+  margin-left: 10px;
 }
 
 .terms-info-important {
+  font-family: 'AgoraSansProBold', 'Arial', sans-serif;
   color: #e11a27;
 }
 
@@ -443,7 +543,6 @@ footer  {
 
 .footer-links {
   display: flex;
-  justify-content: space-between;
 }
 
 .footer-links ul {
@@ -466,14 +565,21 @@ footer  {
 .footer-links section {
   width: 155px;
   line-height: 33px;
-  padding-top: 30px;
+  padding-top: 20px;
   border-top: 1.5px solid #000000;
+  margin-right: 75px;
 }
 
+.footer-links section:last-of-type {
+  margin-right: 0;
+}
+
+
 .social {
+  margin-left: auto;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: flex-start;
 }
 
@@ -482,7 +588,9 @@ footer  {
   text-decoration: none;
   width: 27px;
   height: 27px;
+  padding-top: 20px;
   margin-right: 22px;
+  margin-bottom: 50px;
 
 }
 
@@ -508,4 +616,5 @@ footer  {
 
 .copyright {
   align-self: center;
+  padding-bottom: 55px;
 }
