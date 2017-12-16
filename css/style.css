@@ -1,38 +1,51 @@
 @font-face {
-font-family: 'PFAgoraSansPro-Regular';
-font-style: normal;
-font-weight: normal;
-src: local('PFAgoraSansPro-Regular'), url('../fonts/pfagorasanspro-regular.woff') format('woff');
+  font-family: 'AgoraSansProUltraBlack';
+  font-style: normal;
+  font-weight: 100;
+  src: url('../fonts/AgoraSansProUltraBlack.woff') format('woff');
 }
 
 @font-face {
-font-family: 'PFAgoraSansPro-Light';
-font-style: normal;
-font-weight: normal;
-src: local('PFAgoraSansPro-Light'), url('../fonts/pfagorasanspro-light.woff') format('woff');
+  font-family: 'AgoraSansProBold';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/AgoraSansProBold.woff') format('woff');
 }
 
 @font-face {
-font-family: 'PFAgoraSansPro-Thin';
-font-style: normal;
-font-weight: 100;
-src: local('PFAgoraSansPro-Thin'), url('../fonts/pfagorasanspro-thin.woff') format('woff');
+  font-family: 'AgoraSansProRegular';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/AgoraSansProRegular.woff') format('woff');
 }
 
 @font-face {
-font-family: 'PFAgoraSansPro-XThin';
-font-style: normal;
-font-weight: 100;
-src: local('PFAgoraSansPro-XThin'), url('../fonts/pfagorasanspro-xthin.woff') format('woff');
+  font-family: 'AgoraSansProLight';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/AgoraSansProLight.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'PFAgoraSansPro-Thin';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/pfagorasanspro-thin.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'AgoraSansProXThin';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/AgoraSansProXThin.woff') format('woff');
 }
 
 
 body {
   width: 1520px;
-  font-family: 'PFAgoraSansPro-Regular';
+  font-family: 'AgoraSansProRegular', 'Arial', sans-serif;
   font-size: 18px;
   font-weight: normal;
-
 }
 
 .main-logo {
@@ -78,24 +91,29 @@ body {
 .red-button {
   background-color: #e11a27;
   color: #ffffff;
+  box-shadow: 0 0 2px #990000;
 }
 
-.red-button:hover,
+.red-button:hover {
+	background: linear-gradient(to top, #f26843,#f58669)
+}
+
 .red-button:active {
-  background-color: #a70a3e;
+	background: linear-gradient(to top, #e1603e,#d84732);
+	box-shadow: 0 0 2px #942718 inset;
 }
 
 
 .main-banner {
   min-height: 550px;
-  background-image: url("../img/main-banner.jpg");
+  background-image: url('../img/main-banner.jpg');
   text-align: center;
   display: flex;
   flex-direction: column;
 }
 
-.main-banner h1 {
-  font-family: 'PFAgoraSansPro-XThin', Arial, sans-serif;
+.main-header {
+  font-family: 'AgoraSansProXThin', Arial, sans-serif;
   font-size: 50px;
   font-weight: 200;
   letter-spacing: 2px;
@@ -105,14 +123,8 @@ body {
   padding-top: 50px;
 }
 
-.main-banner h1::first-letter {
+.main-header::first-letter {
   font-size: 60px;
-}
-
-.main-banner h2 {
-  font-family: 'PFAgoraSansPro-Light', Arial, sans-serif;
-  font-size: 24px;
-  font-weight: 400;
 }
 
 .main-banner .button {
@@ -122,9 +134,7 @@ body {
 .steps {
   padding-top: 55px;
   padding-bottom: 95px;
-
 }
-
 
 .steps-list {
   list-style: none;
@@ -153,7 +163,7 @@ body {
 }
 
 .step-icon::after {
-  content: "";
+  content: '';
   display: block;
   position: relative;
   border-bottom: 5px dashed #ffd200;
@@ -162,31 +172,31 @@ body {
 }
 
 .download-icon {
-  background-image: url("../img/photobook-1.svg");
+  background-image: url('../img/photobook-1.svg');
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .design-icon {
-  background-image: url("../img/photobook-2.svg");
+  background-image: url('../img/photobook-2.svg');
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .pay-icon {
-  background-image: url("../img/photobook-3.svg");
+  background-image: url('../img/photobook-3.svg');
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .get-icon {
-  background-image: url("../img/photobook-4.svg");
+  background-image: url('../img/photobook-4.svg');
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .step-name {
-  font-family: 'PFAgoraSansPro-Light';
+  font-family: 'AgoraSansProLight';
   font-size: 24px;
   text-align: center;
 }
@@ -196,24 +206,15 @@ body {
   background-color: #f3f0e7;
 }
 
-.advantage h2 {
-  font-family: 'PFAgoraSansPro-XThin', Arial, sans-serif;
-  font-size: 50px;
-  font-weight: 200;
-  letter-spacing: 2px;
-  text-transform: uppercase;
+.advantage .main-header {
   padding: 0;
   padding-top: 50px;
   padding-bottom: 60px;
   margin: 0;
 }
 
-.advantage h2::first-letter {
-  font-size: 60px;
-}
-
 .advantage-name {
-  font-family: 'PFAgoraSansPro-Light', Arial, sans-serif;
+  font-family: 'AgoraSansProLight', Arial, sans-serif;
   font-size: 24px;
   padding: 0;
   margin: 0;
@@ -222,7 +223,7 @@ body {
 }
 
 .advantage-info {
-  font-family: 'PFAgoraSansPro-Light', Arial, sans-serif;
+  font-family: 'AgoraSansProLight', Arial, sans-serif;
   font-size: 16px;
 }
 
@@ -248,11 +249,9 @@ body {
   margin-bottom: 115px;
 }
 
-.solutions h2 {
-  font-family: 'PFAgoraSansPro-XThin', Arial, sans-serif;
-  font-size: 60px;
-  letter-spacing: 2px;
-  text-align: center;
+.solutions .main-header {
+  align-self: center;
+  margin-bottom: 55px;
 }
 
 .solutions-list {
@@ -275,21 +274,23 @@ body {
 }
 
 .bestseller::before {
-  content: "bestseller";
-  font-size: 20px;
-  font-weight: 700;
-  color: #e11a27;
-  padding-top: 5px;
+  content: 'bestseller';
+  font-family: 'AgoraSansProUltraBlack';
+  font-size: 16px;
+  font-weight: 100;
+  letter-spacing: 1px;
+  color: transparent;
   text-transform: uppercase;
   text-align: center;
+  text-shadow: 0px 12px 0 #e11a27;
   height: 0;
-  width: 155px;
-  border-bottom: 27px solid #ffd200;
-  border-left: 27px solid transparent;
-  border-right: 27px solid transparent;
+  width: 150px;
+  border-bottom: 25px solid #ffd200;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
   position: absolute;
-  top: -27px;
-  left: 53px;
+  top: -25px;
+  left: 54px;
 }
 
 .solution-title {
@@ -326,20 +327,21 @@ body {
 }
 
 .content-item::before {
-  content: "";
+  content: '';
   width: 22px;
   height: 22px;
   position: absolute;
   top: 5px;
   left: 0px;
-  background-image: url("../img/checklist-icon.png");
+  background-image: url('../img/checklist-icon.png');
   background-position: 0 0;
   background-repeat: no-repeat;
 }
 
 
 .price {
-  font-family: 'PFAgoraSansPro-XThin', Arial, sans-serif;
+  font-family: 'AgoraSansProXThin', Arial, sans-serif;
+  font-weight: 700;
   font-size: 60px;
   text-align: center;
   margin-top: auto;
@@ -347,7 +349,6 @@ body {
 
 .solution-footer {
   flex: 0 0 auto;
-
   font-size: 22px;
   text-align: center;
   margin: 0;
@@ -356,7 +357,7 @@ body {
 
 .testimonials {
   min-height: 765px;
-  background-image: url("../img/testimonials-banner.jpg");
+  background-image: url('../img/testimonials-banner.jpg');
   margin-bottom:  94px;
 }
 
@@ -369,20 +370,11 @@ body {
   margin-left: 220px;
 }
 
-.testimonials h2 {
-  font-family: 'PFAgoraSansPro-XThin', Arial, sans-serif;
-  font-size: 50px;
-  font-weight: 200;
-  letter-spacing: 2px;
-  text-transform: uppercase;
+.testimonials .main-header {
   padding: 0;
   padding-top: 50px;
   padding-bottom: 60px;
   margin: 0;
-}
-
-.testimonials h2::first-letter {
-  font-size: 60px;
 }
 
 .terms  {
@@ -477,6 +469,42 @@ footer  {
   padding-top: 30px;
   border-top: 1.5px solid #000000;
 }
+
+.social {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.social-button {
+  font-size: 0;
+  text-decoration: none;
+  width: 27px;
+  height: 27px;
+  margin-right: 22px;
+
+}
+
+.social-button-fb {
+  background-image:  url('../img/facebook-icon.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.social-button-vk {
+  background-image:  url('../img/vkontakte-icon.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.social-button-insta {
+  background-image:  url('../img/instagram-icon.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 
 .copyright {
   align-self: center;
