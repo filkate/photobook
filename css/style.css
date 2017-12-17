@@ -63,6 +63,57 @@ body {
   justify-content: center;
 }
 
+header nav {
+  display: flex;
+  align-items: center;
+}
+
+.hamburger-menu {
+  display: block;
+  margin-top: 5px;
+  margin-left: 155px;
+}
+
+.hamburger-menu:hover svg,
+.hamburger-menu:focus svg {
+  fill: #e11a27;
+}
+
+.main-logo {
+  margin-left: 68px;
+}
+
+.user-block {
+  margin-right: 160px;
+}
+
+.user-block:hover svg,
+.user-block:focus svg {
+  fill: #e11a27;
+}
+
+.phone {
+  font-family: 'AgoraSansProLight', 'Arial', sans-serif;
+  font-size: 16px;
+  padding: 10px 40px;
+  color: #000000;
+  background-color: #ffd200;
+  border-radius: 10px;
+  margin-right: 55px;
+  margin-left: auto;
+  position: relative;
+}
+
+.phone::after {
+  content: '';
+  border-bottom:  1px dashed black;
+  width: 80%;
+  height: 0;
+  position: absolute;
+  top: 30px;
+}
+
+
 .button {
   display: block;
   text-decoration: none;
@@ -98,7 +149,8 @@ body {
 	background: linear-gradient(to top, #f26843,#f58669)
 }
 
-.red-button:active {
+.red-button:active,
+ .red-button:focus {
 	background: linear-gradient(to top, #e1603e,#d84732);
 	box-shadow: 0 0 2px #942718 inset;
 }
