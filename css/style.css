@@ -660,33 +660,19 @@ footer  {
 .social-button {
   font-size: 0;
   text-decoration: none;
-  width: 27px;
-  height: 27px;
-  padding-top: 20px;
-  margin-right: 22px;
-  margin-bottom: 50px;
+  width: 28px;
+  height: 28px;
 
+  padding: 0;
+  padding-top: 10px;
+  margin: 0;
+  margin-right: 15px;
+  margin-bottom: 45px;
 }
 
-.social-button-fb {
-  background-image:  url('../img/facebook-icon.svg');
-  background-position: center;
-  background-repeat: no-repeat;
+.social-button:hover path {
+  fill: #e11a27;
 }
-
-
-.social-button-vk {
-  background-image:  url('../img/vkontakte-icon.svg');
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.social-button-insta {
-  background-image:  url('../img/instagram-icon.svg');
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
 
 .copyright {
   align-self: center;
