@@ -190,7 +190,7 @@ header nav {
   margin: 0;
 }
 
-.main-header::first-letter {
+.base-title::first-letter {
   font-size: 60px;
 }
 
